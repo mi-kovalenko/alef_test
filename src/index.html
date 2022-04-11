@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo-link" href="index.html"><img class="header__logo" src="" alt="Логотип магазина."></a>
+        <nav class="header__nav">
+          <ul class="header__menu-list menu-list">
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link"><span class="visually-hidden">Личный кабинет</span></a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link"><span class="visually-hidden">Избранное</span></a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link"><span class="visually-hidden">Корзина</span></a>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <div class="popover-categories">
+                <ul class="popover-categories__list">
+                  <li class="popover-categories__category">
+                    <a href="#" class="popover-categories__link">Постельное бельё</a>
+                  </li>
+                  <li class="popover-categories__category">
+                    <a href="#" class="popover-categories__link">Одежда для дома</a>
+                  </li>
+                  <li class="popover-categories__category">
+                    <a href="#" class="popover-categories__link">Одежда для улицы</a>
+                  </li>
+                  <li class="popover-categories__category">
+                    <a href="#" class="popover-categories__link">Выход</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>           
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Интернет-магазин детской одежды</h1>
+      <section class="product">
+        <div class="product__container">
+          <!-- <div class="product__previews">тут будут все фотки</div>  -->
+          <h2 class="product__title">Пижама для девочек</h2>
+          <p class="product__lot">Арт. 02765/46</p>
+          <div class="product__reviews">
+            <p>Отзывы</p>
+            <p>14 отзывов</p>
+          </div>
+          <div class="product__price-container">
+            <p class="product__price">800 ₽</p>
+            <p class="product__price--before">1500 ₽</p>
+            <div class="sale-piece">скидка -36%</div>
+            <div class="sale-piece">акция -20%</div>
+          </div>
+          <select class="product__select select" name="sorting-size">
+            <option value="universal">Выберите размер</option>
+          </select>
+          <a href="#" class="product__link">Определить размер</a>
+          <!-- <div class="product__counter">1</div> -->
+          <button class="btn-extra" type="button">Добавить в корзину</button>
+          <button class="btn-extra" type="button"><span class="visually-hidden">Добавить в избранное</span></button>
+          <a href="#" class="product__link">Купить в 1 клик</a>
+          <ul class="product__link-wrapper">
+            <li><button class="product__link" type="button">Описание товара</button></li>
+            <li><button class="product__link" type="button">Доставка и возврат</button></li>
+            <li><button class="product__link" type="button">Способы оплаты</button></li>
+          </ul>
+          <a href="#" class="product__link">Посмотреть все стили</a>
+        </div>
+      </section>
+      <section class="catalog-gallery">
+        <div class="catalog-gallery__container">
+          <h2 class="visually-hidden">Фотогалерея</h2>
+          <!-- просто куча фоток? -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <dl class="footer__menu-list-wrapper">
+          <dt class="footer__menu-list">Покупателям</dt>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">Каталог</a></dd>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">Акции</a></dd>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">Бренды</a></dd>
+          <dt class="footer__menu-list">О нас</dt>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">О компании</a></dd>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">Новости</a></dd>
+          <dd class="footer__menu-item"><a href="#" class="footer__link">Команда</a></dd>
+        </dl>
+        <div class="footer__newsletter">
+          <form class="footer__newsletter-form newsletter-form" action="https://echo.htmlacademy.ru" method="POST">
+            <h2 class="newsletter-form__heading">Узнайте первыми о новинках и акциях</h2>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Адрес электронной почты" type="email" name="newsletter-email" id="newsletter-email" pattern="" required>
+            <button class="newsletter-form__btn-reset" type="reset"><span class="visually-hidden">Очистить поле</span></button>
+            <button class="btn-main" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
