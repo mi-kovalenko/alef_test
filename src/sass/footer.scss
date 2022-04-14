@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+}
+
+.footer__container {
+  @include container;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__menu-list-wrapper {
+  display: inline-block;
+}

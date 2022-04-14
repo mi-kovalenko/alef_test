@@ -1,0 +1,30 @@
+.product {
+  width: 100%;
+}
+
+.product__container {
+  @include container;
+}
+
+.product__reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__price {
+  display: inline-block;
+}
+
+.product__sales-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__select {
+  width: 100%;
+}

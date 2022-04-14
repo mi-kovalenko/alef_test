@@ -81,5 +81,119 @@ body {
   font-display: swap;
 }
 
-@i @import "header.scss";
+.header {
+  width: 100%;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.popover-categories {
+  display: none;
+}
+
+.product {
+  width: 100%;
+}
+
+.product__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 700px) {
+  .product__container {
+    padding: 0 30px;
+  }
+}
+
+.product__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__price {
+  display: inline-block;
+}
+
+.product__sales-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sale-piece {
+  display: inline-block;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 700px) {
+  .footer__container {
+    padding: 0 30px;
+  }
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer__menu-list-wrapper {
+  display: inline-block;
+}
 /*# sourceMappingURL=styles.css.map */

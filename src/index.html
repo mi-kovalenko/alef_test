@@ -50,8 +50,8 @@
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин детской одежды</h1>
       <section class="product">
+        <!-- <div class="product__previews">тут будут все фотки</div>  -->
         <div class="product__container">
-          <!-- <div class="product__previews">тут будут все фотки</div>  -->
           <h2 class="product__title">Пижама для девочек</h2>
           <p class="product__lot">Арт. 02765/46</p>
           <div class="product__reviews">
@@ -59,10 +59,14 @@
             <p>14 отзывов</p>
           </div>
           <div class="product__price-container">
-            <p class="product__price">800 ₽</p>
-            <p class="product__price--before">1500 ₽</p>
-            <div class="sale-piece">скидка -36%</div>
-            <div class="sale-piece">акция -20%</div>
+            <div class="product__price-wrapper">
+              <p class="product__price">800 ₽</p>
+              <p class="product__price product__price--before">1500 ₽</p>
+            </div>
+            <div class="product__sales-wrapper">
+              <div class="sale-piece">скидка -36%</div>
+              <div class="sale-piece">акция -20%</div>
+            </div>
           </div>
           <select class="product__select select" name="sorting-size">
             <option value="universal">Выберите размер</option>
@@ -89,15 +93,19 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <dl class="footer__menu-list-wrapper">
-          <dt class="footer__menu-list">Покупателям</dt>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">Каталог</a></dd>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">Акции</a></dd>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">Бренды</a></dd>
-          <dt class="footer__menu-list">О нас</dt>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">О компании</a></dd>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">Новости</a></dd>
-          <dd class="footer__menu-item"><a href="#" class="footer__link">Команда</a></dd>
+        <dl class="footer__wrapper">
+          <div class="footer__menu-list-wrapper">
+            <dt class="footer__menu-list">Покупателям</dt>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">Каталог</a></dd>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">Акции</a></dd>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">Бренды</a></dd>
+          </div>
+          <div class="footer__menu-list-wrapper">
+            <dt class="footer__menu-list">О нас</dt>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">О компании</a></dd>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">Новости</a></dd>
+            <dd class="footer__menu-item"><a href="#" class="footer__link">Команда</a></dd>
+          </div>
         </dl>
         <div class="footer__newsletter">
           <form class="footer__newsletter-form newsletter-form" action="https://echo.htmlacademy.ru" method="POST">
