@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "popover-categories.scss"
+    ],
+    "names": [],
+    "file": "popover-categories.css"
+}

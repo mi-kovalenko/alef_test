@@ -1,5 +1,7 @@
-body {
-  background-color: black;
-  color: aquamarine;
-}
-
+@import "global.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "menu-list.scss";
+@import "popover-categories.scss";
